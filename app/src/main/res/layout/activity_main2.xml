@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+
+    <TextView
+        android:id="@+id/gunting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/coming_soon"
+        android:rotation="-10"
+        android:text="@string/gunting"
+        android:textColor="#4CAF50"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kertas"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/batu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/coming_soon"
+        android:rotation="-10"
+        android:text="@string/batu"
+        android:textColor="#9C27B0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/kertas"
+        app:layout_constraintTop_toBottomOf="@+id/kertas" />
+
+    <TextView
+        android:id="@+id/kertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/coming_soon"
+        android:rotation="-10"
+        android:text="@string/kertas"
+        android:textColor="#FF5722"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gunting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnD"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="batu"
+        app:layout_constraintEnd_toEndOf="@+id/textComp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textComp"
+        app:layout_constraintTop_toBottomOf="@+id/textComp"
+        app:srcCompat="@drawable/ic_batu" />
+
+    <ImageView
+        android:id="@+id/btnF"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="gunting"
+        app:layout_constraintEnd_toEndOf="@+id/btnE"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnE"
+        app:layout_constraintTop_toBottomOf="@+id/btnE"
+        app:srcCompat="@drawable/ic_gunting" />
+
+    <ImageView
+        android:id="@+id/btnB"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="kertas"
+        app:layout_constraintEnd_toEndOf="@+id/btnA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnA"
+        app:layout_constraintTop_toBottomOf="@+id/btnA"
+        app:srcCompat="@drawable/ic_kertas" />
+
+    <ImageView
+        android:id="@+id/btnC"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="gunting"
+        app:layout_constraintEnd_toEndOf="@+id/btnB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnB"
+        app:layout_constraintTop_toBottomOf="@+id/btnB"
+        app:srcCompat="@drawable/ic_gunting" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:rotation="-10"
+        android:text="VS"
+        android:textAlignment="center"
+        android:textColor="#C63131"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnE"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnB"
+        app:layout_constraintTop_toBottomOf="@+id/batu" />
+
+    <ImageView
+        android:id="@+id/btnA"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="batu"
+        app:layout_constraintEnd_toEndOf="@+id/textPemain1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textPemain1"
+        app:layout_constraintTop_toBottomOf="@+id/textPemain1"
+        app:srcCompat="@drawable/ic_batu" />
+
+    <TextView
+        android:id="@+id/textPemain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="@string/pemain_1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnE"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="kertas"
+        app:layout_constraintEnd_toEndOf="@+id/btnD"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnD"
+        app:layout_constraintTop_toBottomOf="@+id/btnD"
+        app:srcCompat="@drawable/ic_kertas" />
+
+    <TextView
+        android:id="@+id/textComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="Pemain 2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/btnG"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnF"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_refresh" />
+
+    <ImageView
+        android:id="@+id/menuPemain"
+        android:layout_width="74dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnG"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnC"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/ic_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ahlanGame</string>
+    <string name="kertas">Kertas</string>
+    <string name="gunting">Gunting</string>
+    <string name="batu">Batu</string>
+    <string name="comp">Comp</string>
+    <string name="pemain_1">Pemain 1</string>
+    <string name="batu1">Batu1</string>
+    <string name="batucomp">BatuComp</string>
+    <string name="batupemain1">BatuPemain1</string>
+    <string name="batucomputer">BatuComputer</string>
+    <string name="kertascomputer">KertasComputer</string>
+    <string name="kertaspemain1">KertasPemain1</string>
+    <string name="guntingpemain1">guntingpemain1</string>
+    <string name="guntingcomputer1">GuntingComputer1</string>
+    <string name="refresh">Refresh</string>
+    <string name="vs">VS</string>
+    <string name="VS">VS</string>
+    <string name="BATU">BATU</string>
+    <string name="KERTAS">KERTAS</string>
+    <string name="pilih_lawanmu">PILIH LAWANMU</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="textview">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tuliskan_namamu_di_bawah">Tuliskan namamu di bawah</string>
+</resources>
